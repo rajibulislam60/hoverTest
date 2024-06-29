@@ -1,0 +1,38 @@
+.hoverTest {
+  text-align: center;
+}
+.hoverImg {
+  position: relative;
+  width: 600px;
+  margin: auto;
+  padding: 0;
+}
+.imgWork {
+  width: 600px;
+}
+.personText {
+  background: red;
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: 0.4s;
+}
+.hoverImg:hover .personText {
+  z-index: -1;
+  background: white;
+}
+.overlayDetails {
+  position: absolute;
+  height: 0;
+  width: 100%;
+  background: rgba(160, 211, 160, 0.322);
+  top: 0;
+  z-index: -1;
+  transition: 0.4s;
+}
+.hoverImg:hover .overlayDetails {
+  height: 100%;
+  z-index: 1;
+}
